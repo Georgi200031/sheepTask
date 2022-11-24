@@ -17,9 +17,10 @@ int solve(int N, int K){
       }
       if(sall>sal){
       sall = sal;
+      sal =0;
       }
       }
-      ans=sum-sal;
+      ans=sum-sall;
       return ans;
 }
 
