@@ -9,16 +9,10 @@ int solve(int N, int K){
             sum+=a[i];
       d=sum/K;
       int sall = 1000000;
-      for(int j=0;j<N;j++){
       for(int i=0;i<N;i++){
             if(sal+a[i]<=d*(K-1)) {
                   sal+=a[i];
             }
-      }
-      if(sall>sal){
-      sall = sal;
-      sal =0;
-      }
       }
       ans=sum-sall;
       return ans;
